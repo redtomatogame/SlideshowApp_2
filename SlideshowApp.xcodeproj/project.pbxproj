@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		291AD6CF20766CFE00EC8CEF /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291AD6CE20766CFE00EC8CEF /* ResultViewController.swift */; };
 		FC2EBD7D205CBFE90076FE74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2EBD7C205CBFE90076FE74 /* AppDelegate.swift */; };
 		FC2EBD7F205CBFE90076FE74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2EBD7E205CBFE90076FE74 /* ViewController.swift */; };
 		FC2EBD82205CBFE90076FE74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2EBD80205CBFE90076FE74 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		291AD6CE20766CFE00EC8CEF /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		FC2EBD79205CBFE90076FE74 /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2EBD7C205CBFE90076FE74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC2EBD7E205CBFE90076FE74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				FC2EBD7C205CBFE90076FE74 /* AppDelegate.swift */,
 				FC2EBD7E205CBFE90076FE74 /* ViewController.swift */,
+				291AD6CE20766CFE00EC8CEF /* ResultViewController.swift */,
 				FC2EBD8E205CC3780076FE74 /* 1.jpg */,
 				FC2EBD90205CC38B0076FE74 /* 2.jpg */,
 				FC2EBD92205CC3910076FE74 /* 3.jpg */,
@@ -150,6 +153,7 @@
 			files = (
 				FC2EBD7F205CBFE90076FE74 /* ViewController.swift in Sources */,
 				FC2EBD7D205CBFE90076FE74 /* AppDelegate.swift in Sources */,
+				291AD6CF20766CFE00EC8CEF /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +315,7 @@
 				FC2EBD8D205CBFE90076FE74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

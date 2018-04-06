@@ -17,15 +17,17 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
     // 表示している画像の番号
     var dispImageNo = 0
     
+    
+    //画像の名前の配列
+    let imageNameArray = [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        ]
+    
     // 表示している画像の番号を元に画像を表示する
     func displayImage() {
         
-        // 画像の名前の配列
-        let imageNameArray = [
-            "1.jpg",
-            "2.jpg",
-            "3.jpg",
-            ]
         
         // 画像の番号が正常な範囲を指しているかチェック
         
@@ -65,7 +67,11 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
             action: #selector(ViewController.tapped(_:)))
             tapGesture.delegate = self
             self.ImageView.addGestureRecognizer(tapGesture)
+            ImageView.isUserInteractionEnabled = true
     }
+    
+    // imageView.addGestureRecognizer(tapGesture)
+    // imageView.isUserInteractionEnabled = true
     
     // NSTimerによって一定の間隔で呼び出される関数
     func onTimer(timer: Timer) {
@@ -105,10 +111,14 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
     }
     
     @objc func tapped(_ sender: UITapGestureRecognizer){
+    
         // 処理
-        if sender.state == .ended {
-            print("タップ")
-        }
+        print("tapped")
+        
+            let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "result") as! ResultViewController
+            nextVC.filename = imageNameArray[dispImageNo]
+            present(nextVC, animated: true, completion: nil)
+
     }
     
     
