@@ -117,6 +117,8 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
         
             let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "result") as! ResultViewController
             nextVC.filename = imageNameArray[dispImageNo]
+            nextVC.modalTransitionStyle = .crossDissolve
+        
             present(nextVC, animated: true, completion: nil)
 
     }
