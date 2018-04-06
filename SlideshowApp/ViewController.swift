@@ -120,7 +120,7 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
             nextVC.modalTransitionStyle = .crossDissolve
         
             present(nextVC, animated: true, completion: nil)
-
+            // 
     }
     
     
